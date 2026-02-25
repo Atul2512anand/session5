@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Frontier | NFSU Dharwad x Abhishek Ranjan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background Layer -->
+    <div class="bg-wrapper">
+        <canvas id="particleCanvas"></canvas>
+        <div class="grid-overlay"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="scanline"></div>
+    </div>
+    
+    <header>
+        <nav class="container">
+            <div class="university-branding">
+                <div class="logo-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/b/b3/National_Forensic_Sciences_University_Logo.png" alt="NFSU Logo" class="main-logo">
+                </div>
+                <div class="dept-info">
+                    <span class="uni-name">National Forensic Sciences University</span>
+                    <span class="cell-tag">Training & Placement Cell, Dharwad</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#speaker" class="nav-item">Speaker</a>
+                <a href="#education" class="nav-item">Credentials</a>
+                <a href="#about" class="nav-item">Insights</a>
+                <a href="#" class="btn-sm btn-outline magnetic">T&P Portal</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <div class="reveal-up">
+                    <div class="badge-new">
+                        <span class="pulse"></span>
+                        February 28, 2026 | 2:30 PM - 3:30 PM
+                    </div>
+                    <h1 class="glitch-text" data-text="Unlocking the AI Frontier">Unlocking the <br><span class="text-gradient">AI Frontier</span></h1>
+                    <p class="subtitle">Master Generative AI, LLMs, and the future of Engineering with industry veteran Abhishek Ranjan. A deep dive into the next era of computing.</p>
+                </div>
+                
+                <div class="countdown-container reveal-up delay-1">
+                    <p class="countdown-label">COMMENCING IN</p>
+                    <div class="timer" id="countdown">
+                        <div class="time-block">
+                            <div class="num-box"><span id="days">00</span></div>
+                            <label>Days</label>
+                        </div>
+                        <div class="time-block">
+                            <div class="num-box"><span id="hours">00</span></div>
+                            <label>Hours</label>
+                        </div>
+                        <div class="time-block">
+                            <div class="num-box"><span id="minutes">00</span></div>
+                            <label>Mins</label>
+                        </div>
+                        <div class="time-block">
+                            <div class="num-box"><span id="seconds">00</span></div>
+                            <label>Secs</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-group reveal-up delay-2">
+                    <a href="#" class="btn btn-primary magnetic">
+                        <span>Register for Event</span>
+                        <i class="fas fa-user-plus"></i>
+                    </a>
+                    <a href="#" class="btn btn-glass magnetic">
+                        <i class="fas fa-video"></i>
+                        <span>Join Webinar</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="speaker" class="speaker-section container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">The <span class="text-gradient">Visionary</span></h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="speaker-card-v2 reveal-up">
+                <div class="speaker-visual">
+                    <div class="image-stack">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80" alt="Abhishek Ranjan" class="speaker-img">
+                        <div class="img-accent"></div>
+                        <div class="corner-tech t-l"></div>
+                        <div class="corner-tech b-r"></div>
+                    </div>
+                    
+                    <div class="tech-stack-side">
+                        <div class="tag">Generative AI</div>
+                        <div class="tag">LLMs</div>
+                        <div class="tag">RLHF</div>
+                        <div class="tag">LangChain</div>
+                    </div>
+                </div>
+                
+                <div class="speaker-info">
+                    <div class="info-header">
+                        <h3>Abhishek Ranjan</h3>
+                        <p class="role-tag"><i class="fas fa-microchip"></i> AI Engineer | LLM Specialist</p>
+                    </div>
+
+                    <div class="journey-tabs">
+                        <h4 class="sub-heading"><i class="fas fa-briefcase"></i> Professional Experience</h4>
+                        <div class="journey-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>AI Engineer @ Stealth Startup</h4>
+                                    <span>Nov 2025 - Present (Remote)</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>AI Engineer @ InfraX AI Systems</h4>
+                                    <span>Sep 2025 - Present (Gurugram)</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>SDE Intern @ Expedia Group</h4>
+                                    <span>Jun 2025 - Jul 2025</span>
+                                    <p class="timeline-desc">Architected cost projection tools for blue-green deployment on Spinnaker using Spring Boot & React.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>AI/ML Intern @ Altibbé Health</h4>
+                                    <span>Oct 2024 - May 2025</span>
+                                    <p class="timeline-desc">Focused on LLM fine-tuning, RLHF training, and full-stack AI deployment.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="sub-heading" id="education"><i class="fas fa-graduation-cap"></i> Academic Excellence</h4>
+                        <div class="journey-timeline education">
+                            <div class="timeline-item">
+                                <div class="timeline-dot edu-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Malaviya National Institute of Technology (MNIT) Jaipur</h4>
+                                    <span>Nov 2022 - Apr 2026</span>
+                                    <p class="timeline-desc">B.Tech in Computer Science and Engineering</p>
+                                    <div class="grade-pill">Grade: CGPA 8.60 (till 7th Sem)</div>
+                                    <p class="timeline-desc activities"><strong>Activities:</strong> Coding, Quizzing, and Debating.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot edu-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>DAV Public & Dolphin Public School</h4>
+                                    <span>Sep 2019 - Apr 2022</span>
+                                    <p class="timeline-desc">Secondary and Senior Secondary | PCM</p>
+                                    <div class="grade-stats">
+                                        <span><strong>10th:</strong> 98.4% (District Topper)</span>
+                                        <span><strong>12th:</strong> 95.4% (Top 10 in PCM)</span>
+                                    </div>
+                                    <p class="timeline-desc activities">
+                                        • Won State and National level Quizzing championships.<br>
+                                        • Cleared UPSC NDA 148A+ recommended by SSB Bengaluru.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="features container">
+            <div class="grid-3">
+                <div class="feature-card reveal-up">
+                    <div class="card-glow"></div>
+                    <div class="icon-circle"><i class="fas fa-brain"></i></div>
+                    <h3>GenAI Roadmap</h3>
+                    <p>Navigate the complex landscape of Generative AI from fundamentals to advanced deployment.</p>
+                </div>
+                <div class="feature-card reveal-up delay-1">
+                    <div class="card-glow"></div>
+                    <div class="icon-circle"><i class="fas fa-code"></i></div>
+                    <h3>LLM Fine-tuning</h3>
+                    <p>Learn how to train and optimize models for specific domain tasks and vernacular languages.</p>
+                </div>
+                <div class="feature-card reveal-up delay-2">
+                    <div class="card-glow"></div>
+                    <div class="icon-circle"><i class="fas fa-rocket"></i></div>
+                    <h3>Career Insights</h3>
+                    <p>Get direct advice on landing high-impact AI roles in global tech giants and stealth startups.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/b3/National_Forensic_Sciences_University_Logo.png" alt="Logo">
+                <p>National Forensic Sciences University, Dharwad Campus</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Training & Placement Cell. Empowering the next generation of AI Engineers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
